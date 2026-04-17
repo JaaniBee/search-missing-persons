@@ -40,7 +40,7 @@ A sophisticated Django-based web application designed to help find missing perso
 ## 🚀 Getting Started
 
 ### Prerequisites
-*   Python 3.x
+*   Python 3.12 (Recommended)
 *   Virtual Environment tool (`venv`)
 
 ### Setup Instructions
@@ -54,16 +54,21 @@ A sophisticated Django-based web application designed to help find missing perso
 2.  **Initialize Environment**:
     ```bash
     python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    # On Windows:
+    .\venv\Scripts\activate
+    # On macOS/Linux:
+    source venv/bin/activate
     ```
 
 3.  **Install Dependencies**:
     ```bash
-    pip install -r requirements.txt
+    python -m pip install --upgrade pip
+    python -m pip install -r requirements.txt
     ```
 
 4.  **Run Migrations**:
     ```bash
+    python manage.py makemigrations
     python manage.py migrate
     ```
 
@@ -72,6 +77,9 @@ A sophisticated Django-based web application designed to help find missing perso
     python manage.py runserver
     ```
     Access the portal at `http://127.0.0.1:8000/`.
+
+> [!IMPORTANT]
+> This project is optimized for **Python 3.12**. Due to TensorFlow 2.16+ requirements on this version, `tf-keras` is included for compatibility. If you encounter issues during installation, ensures you are using a 64-bit Python installation.
 
 ---
 
