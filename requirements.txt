@@ -3,7 +3,8 @@ numpy
 opencv-python
 pillow
 deepface
-tensorflow<2.16.0
+tensorflow>=2.16.1
+tf-keras  # Required for Keras 2 compatibility in TensorFlow 2.16+
 # mysqlclient
 nltk
 textblob
