@@ -62,7 +62,7 @@ A sophisticated Django-based web application designed to help find missing perso
 
 3.  **Install Dependencies**:
     ```bash
-    python -m pip install --upgrade pip
+    python -m pip install --upgrade pip setuptools wheel
     python -m pip install -r requirements.txt
     ```
 
